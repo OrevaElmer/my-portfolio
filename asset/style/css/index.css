@@ -140,6 +140,7 @@ h1{
     font-weight: bold;
     line-height: 1.9em;
     text-align: justify;
+    padding: 0 10px;
 }
 
 @media (max-width: 1024px) {
@@ -274,8 +275,8 @@ h1{
         padding: 10px;
     }
     .skills-text {
-        font-size: 18px;
-        line-height: 1.4em;
+        font-size: 17px;
+        line-height: 1.3em;
         flex: 4;
     }
     .skills-list :nth-child(1),
@@ -323,11 +324,12 @@ h1{
     }
     .skills-text {
         font-size: 16px;
-        line-height: 1.3em;
+        line-height: 1.1em;
         flex: 3;
+        padding: 0;
     }
     .skills h1 {
-        margin: 20px;
+        margin: 12px;
         font-size: 20px;
     }
     
