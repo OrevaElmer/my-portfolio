@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'orbitron';
+    src: url("../../font/Orbitron.ttf");
+}
+@font-face {
+    font-family: 'coolvetica';
+    src: url("../../font/coolvetica.otf");
+}
+@font-face {
+    font-family: 'nunito';
+    src: url("../../font/Nunito.ttf");
+}
+@font-face {
+    font-family: "labelle";
+    src: url("../../font/LaBelleAurore-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito';
+}
+
+section{
+    background: rgb(13, 13, 41);
+    color: #ccc;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.header-text{
+    flex: 1;
+    /* width: 600px; */
+    text-align: center;
+    padding-right: 20px;
+    /* border: 1px solid red; */
+}
+
+.logo{
+    display: inline-block;
+    background-color: rgb(253, 137, 137);
+    font-family: 'orbitron';
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 2px #111;
+}
+h3{
+    font-family: 'labelle';
+    font-size: 40px;
+    color: burlywood;
+    letter-spacing: 2px;
+}
+h1{
+    font-size: 80px;
+    display: block;
+    font-family: 'coolvetica';
+    letter-spacing: 3px;
+    padding: 20px 0px; 
+}
+.media-links{
+    margin-top: 80px;
+}
+.media-links a{
+    font-size: 50px;
+    margin-right: 15px;
+    padding: 30px;
+}
+
+.media-links .icon:nth-child(1){
+    color: rgb(24, 66, 252);
+}
+.media-links .icon:nth-child(2){
+    color: rgb(225, 112, 248);
+}
+.media-links .icon:nth-child(3){
+    color: rgb(177, 236, 143);
+}
+.media-links .icon:nth-child(4){
+    color: rgb(236, 199, 143);
+}
+.header-image{
+    border-radius: 50%;
+    position: relative;
+    flex: 1;
+}
+.header-image img{
+    width: 100%;
+    border-radius: 50%;
+    border-bottom: 8px solid rgb(175, 189, 194);
+    object-fit: cover;
+}
+
+.skills{
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.skills h1{
+    margin-bottom: 80px;
+}
+.skills-list{
+    flex: 1;
+}
+.skills-list :nth-child(1),
+.skills-list :nth-child(5){
+    margin-left: 300px;
+}
+.skills-list :nth-child(2),
+.skills-list :nth-child(4){
+    margin-left: 150px;
+}
+.list-item{
+    box-shadow: 0px 0px 8px  red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-item:not(:last-child){
+    margin-bottom: 20px;
+}
+.skills-text{
+    flex: 2;
+    font-size: 30px;
+    color: #ccc;
+    font-weight: bold;
+    line-height: 1.9em;
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding: 40px 80px;
+    }
+    .header-text {
+        padding-right: 10px;
+        /* border: 1px solid red; */
+    }
+    .logo {
+        padding: 10px;
+        border-radius: 50%;
+        margin-bottom: 50px;
+    }
+    h1 {
+        font-size: 60px;
+        padding: 0px;
+    }
+    .media-links {
+        margin-top: 40px;
+    }
+    .media-links a {
+        font-size: 40px;
+        margin-right: 5px;
+    }
+    
+    
+    .skills h1 {
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 50px;
+    }
+    .skills-text {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 2em;
+    }
+    .list-item {
+        width: 80px;
+        height: 80px;
+    }
+    .list-item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .skills-list :nth-child(1),
+    .skills-list :nth-child(5){
+        margin-left: 180px;
+    }
+    .skills-list :nth-child(2),
+    .skills-list :nth-child(4){
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 50px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .media-links a {
+        font-size: 30px;
+        margin-right: 5px;
+        padding: 20px;
+    }
+    .skills h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .list-item {
+        width: 70px;
+        height: 70px;
+    }
+    .skills-text {
+        font-size: 20px;
+        line-height: 2em;
+    }
+    .skills-list :nth-child(1),
+    .skills-list :nth-child(5){
+        margin-left: 130px;
+    }
+    .skills-list :nth-child(2),
+    .skills-list :nth-child(4){
+        margin-left: 70px;
+    }
+}
+@media (max-width:425px) {
+    .container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .header-text h1{
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .media-links {
+        margin-top: 20px;
+    }
+    .media-links a{
+        font-size: 25px;
+    }
+    .header-image{
+        /* flex: 1 1 100%; */
+        /* height: 100%; */
+        width: 90%;
+    }
+    .header-image img{
+        width: 90%;
+    }
+    .skills h1 {
+        margin: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .skills-list{
+        /* flex: 1 1 100%; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .list-item {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    }
+    .skills-text {
+        font-size: 18px;
+        line-height: 1.4em;
+        flex: 4;
+    }
+    .skills-list :nth-child(1),
+    .skills-list :nth-child(5){
+        margin: 0;
+    }
+    .skills-list :nth-child(2),
+    .skills-list :nth-child(4){
+        margin-left: 0;
+    }
+}
+@media (max-width:375px) {
+    .header-text{
+        flex: 3;
+    }
+    .header-text h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .list-item {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+    .logo {
+        margin-bottom: 50px;
+    }
+    .header-image{
+        width: 100%;
+    }
+    .media-links {
+        margin-top: 30px;
+    }
+    .media-links a {
+        font-size: 25px;
+        margin-right: 5px;
+        padding: 10px;
+    }
+}
+@media (max-width:320px) {
+    .list-item {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+    .skills-text {
+        font-size: 16px;
+        line-height: 1.3em;
+        flex: 3;
+    }
+    .skills h1 {
+        margin: 20px;
+        font-size: 20px;
+    }
+    
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/style/css/index.css">
+    <link rel="stylesheet" href="./asset/style/css/all.min.css">
+    <script src="./asset/style/scrollreveal.min.js"></script>
+    <title>elmTech | portfolio</title>
+</head>
+<body>
+<section class="header">
+    <div class="container">
+        <div class="header-text">
+            <p class="logo">elmTech</p>
+            <h3>Welcome to</h3> 
+            <h1>Egalase Oreva Elmer</h1> 
+            <h3>portfolio website</h3>
+            <div class="media-links">
+                <a href="https://web.facebook.com/eegalase1/" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/OrevaElmer" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/egalase-elmer-9ba30baa/" class="icon" ><i class="fab fa-linkedin"></i></a>
+                <a href=" https://wa.me/08147807304" class="icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="header-image">
+            <img src="./asset/image/me.png" alt="personal pics">
+        </div>
+    </div>
+</section>
+<section class="skills">
+    <div class="container">
+        <div class="skills-list">
+            <img class="list-item" src="./asset/image/html.png" alt="html logo">
+            <img class="list-item" src="./asset/image/css.png" alt="css logo">
+            <img class="list-item" src="./asset/image/git.png" alt="">
+            <img class="list-item" src="./asset/image/js.png" alt="js png">
+            <img class="list-item" src="./asset/image/react.png" alt="react.png">
+        </div>
+        <div class="skills-text">
+            <h1 class="title">ABOUT ME 🧑</h1>
+            I have 2years+ experiences working with HTML, CSS, Javascript and React JS. All my works are push to version control software (Github). They are published online with Netlify. I have understanding of Agile Software Development.
+            Those I have associate with, saw me as someone who has the ability to work and collaborate within a team. :
+            I spend my spare time coding; learning new idea.
+            I have the ability to quickly adapt to new ideas and learning new skills.
+            I will be greatful if considered the opportinuty to work with you 🥰
+        </div>
+    </div>
+</section>
+
+<script>
+    ScrollReveal({
+        reset:true,
+        distance: '60px',
+        duration: 2500,
+        delay:400,
+    })
+    ScrollReveal().reveal('.header-text .logo, .header-text h3, .header-text h1, .skills-text',{delay:500, interval:300})
+    ScrollReveal().reveal('.media-links a i',{delay:600, origin:'bottom', interval:300})
+    ScrollReveal().reveal('.header-image img',{delay:600,origin:'top'})
+    ScrollReveal().reveal('.skills-list .list-item',{delay:600,origin:'right', interval:900})
+</script>
+</body>
+</html>
