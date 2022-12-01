@@ -23,14 +23,14 @@
 
 section{
     background: rgb(13, 13, 41);
+    position: relative;
     color: #ccc;
     width: 100%;
-    height: 100vh;
-    padding: 60px 100px;
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 .container{
     display: flex;
@@ -41,10 +41,7 @@ section{
 }
 .header-text{
     flex: 1;
-    /* width: 600px; */
     text-align: center;
-    padding-right: 20px;
-    /* border: 1px solid red; */
 }
 
 .logo{
@@ -54,9 +51,9 @@ section{
     font-weight: bold;
     padding: 10px;
     border-radius: 50%;
-    margin-bottom: 80px;
     letter-spacing: 2px;
     text-shadow: 0px 2px 2px #111;
+    margin-bottom: 30px;
 }
 h3{
     font-family: 'labelle';
@@ -65,19 +62,19 @@ h3{
     letter-spacing: 2px;
 }
 h1{
-    font-size: 80px;
+    font-size: 60px;
     display: block;
     font-family: 'coolvetica';
     letter-spacing: 3px;
-    padding: 20px 0px; 
+    padding: 10px 0px; 
 }
 .media-links{
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .media-links a{
-    font-size: 50px;
-    margin-right: 15px;
-    padding: 30px;
+    font-size: 30px;
+    margin-right: 5px;
+    padding: 20px;
 }
 
 .media-links .icon:nth-child(1){
@@ -93,9 +90,17 @@ h1{
     color: rgb(236, 199, 143);
 }
 .header-image{
+    flex: 1;
     border-radius: 50%;
     position: relative;
-    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image .image-container{
+    position: relative;
+    width: 500px;
+    height: 500px;
 }
 .header-image img{
     width: 100%;
@@ -104,12 +109,8 @@ h1{
     object-fit: cover;
 }
 
-.skills{
-    flex-direction: column;
-    justify-content:flex-start;
-}
 .skills h1{
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .skills-list{
     flex: 1;
@@ -123,9 +124,8 @@ h1{
     margin-left: 150px;
 }
 .list-item{
-    box-shadow: 0px 0px 8px  red;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,21 +135,71 @@ h1{
 }
 .skills-text{
     flex: 2;
-    font-size: 30px;
+    font-size: 24px;
     color: #ccc;
     font-weight: bold;
-    line-height: 1.9em;
+    line-height: 2em;
     text-align: justify;
-    padding: 0 10px;
+    letter-spacing: 1.5px;
 }
 
+.works .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.works .container .project-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.skills .title,
+.works .container .project-title h1{
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+.works .container .project-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.works .container .project-list .project{
+    width: 33%;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+}
+.works .container .project-list .project a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.works .container .project-list .project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    padding: 30px 100px 100px 100px;
+    text-align: center;
+}
+footer p{
+    color: aliceblue;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
 @media (max-width: 1024px) {
     section {
         padding: 40px 80px;
     }
+
     .header-text {
         padding-right: 10px;
-        /* border: 1px solid red; */
     }
     .logo {
         padding: 10px;
@@ -167,7 +217,6 @@ h1{
         font-size: 40px;
         margin-right: 5px;
     }
-    
     
     .skills h1 {
         margin-bottom: 40px;
@@ -258,7 +307,8 @@ h1{
     .header-image img{
         width: 90%;
     }
-    .skills h1 {
+    .skills h1,
+    .works h1 {
         margin: 30px;
         font-size: 30px;
         text-align: center;
@@ -287,6 +337,12 @@ h1{
     .skills-list :nth-child(2),
     .skills-list :nth-child(4){
         margin-left: 0;
+    }
+    .works .container .project-list .project {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        position: relative;
     }
 }
 @media (max-width:375px) {
